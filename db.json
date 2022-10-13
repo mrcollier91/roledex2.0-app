@@ -1,10 +1,10 @@
 {
     "contacts":[
-        {"id" : 1, "name" : "Mom", "phone #": "541.285.4856", "Email": "mom@email.com", "adress": "123 lucky ln"},
-        {"id" : 2, "name" : "Dad", "phone #": "541.285.4857", "Email": "dad@email.com", "adress": "456 hacker rd"},
-        {"id" : 3, "name" : "Grandma", "phone #": "541.285.4858", "Email": "grandma@email.com", "adress": "789 programer dr"},
-        {"id" : 4, "name" : "Wife", "phone #": "541.285.4859", "Email": "wife@email.com", "adress": "1011 flatiron loop"},
-        {"id" : 5, "name" : "Boss", "phone #": "541.285.4851", "Email": "boss@email.com", "adress": "1213 phase 2 ave"},
-        {"id" : 6, "name" : "Co-worker", "phone #": "541.285.4852", "Email": "coworker@email.com", "adress": "1415 projects are hard ct"}
+        {"id" : 1, "name" : "Mom", "phone": "541.285.4856", "email": "mom@email.com", "address": "123 lucky ln"},
+        {"id" : 2, "name" : "Dad", "phone": "541.285.4857", "email": "dad@email.com", "address": "456 hacker rd"},
+        {"id" : 3, "name" : "Grandma", "phone": "541.285.4858", "email": "grandma@email.com", "address": "789 programer dr"},
+        {"id" : 4, "name" : "Wife", "phone": "541.285.4859", "email": "wife@email.com", "address": "1011 flatiron loop"},
+        {"id" : 5, "name" : "Boss", "phone": "541.285.4851", "email": "boss@email.com", "address": "1213 phase 2 ave"},
+        {"id" : 6, "name" : "Co-worker", "phone": "541.285.4852", "email": "coworker@email.com", "address": "1415 projects are hard ct"}
     ]
 }
