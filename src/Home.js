@@ -3,7 +3,7 @@
 function Home() {
     return(
         <div>
-            <h1>Welcome to Roledex app</h1>
+            <h1>Welcome to Roledex app 2.0</h1>
          
         </div>
     )
