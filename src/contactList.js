@@ -1,37 +1,43 @@
-import { useState, useEffect } from "react"
+import {useEffect, useState} from "react"
+import { NavLink } from "react-router-dom";
 
 
-function ContactList() {
-
+function ContactLists() {
+    // console.log("this is ContactList")
+   
     const [contacts, setContacts] = useState([])
     
     function getContacts() {
-        return fetch("http://localhost:3004/contacts")
+      return fetch("http://localhost:3004/contacts")
         .then(response => response.json())
         .then(data => setContacts(data))
     }
-
+  
     useEffect(()=> {
-        getContacts()
-    },[])
-
-
+      getContacts()
+  },[])
+    
     return(
         <div>
             {
-            contacts.map((contact) =>{
-            return(
-            <div key={contact.id}>
-            <p>{contact.name}</p>
-            <p>{contact.phone}</p>
-            <p>{contact.email}</p>
-            <p>{contact.address}</p>
-            </div>
-            )
-            })
+                contacts.map((contact)=>{
+                    return(
+                        <div key={contact.id} className="contact">
+                        <NavLink to={`/contacts/${contact.id}`}>
+                        <div>
+                        <p>{contact.name}</p>
+                        <p>{contact.address}</p>
+                        <p>{contact.phone}</p>
+                        <p>{contact.email}</p>
+                        </div>
+                        </NavLink>
+                        </div>
+                    )
+                })
+           
             }
         </div>
     )
 }
 
-export default ContactList
+export default ContactLists
