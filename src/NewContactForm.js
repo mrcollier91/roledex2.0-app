@@ -1,14 +1,14 @@
 import {useState} from "react"
-
+import {Navigate} from "react-router-dom"
 
 
 function NewContactForm({getContacts}) {
-    
+    // console.log('this is NewContactForm')
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [phone, setPhone] = useState("")
     const [address, setAddress] = useState("")
-    
+    const [isSubmit, setIsSubmit] = useState(false)
 
     function handleNewContact(e) {
         e.preventDefault()
@@ -26,13 +26,13 @@ function NewContactForm({getContacts}) {
             })
         }
         return fetch("http://localhost:3004/contacts", options)
-            .then(() => console.log("good work"))
+            .then(() => setIsSubmit(true))
     }
 
      return(
          <div>
-            
-        <form onSubmit={(e)=>handleNewContact(e)}>
+             {isSubmit ? <Navigate to="/contacts" replace={true} /> : 
+        (<form onSubmit={(e)=>handleNewContact(e)}>
             <label>Name: </label>
             <input type={"text"} placeholder={"enter name"} onChange={(e)=>{setName(e.target.value)}} required></input>
             <br/>
@@ -45,7 +45,7 @@ function NewContactForm({getContacts}) {
             <label>Address: </label>
             <input type={"text"} placeholder={"enter address"} onChange={(e)=>{setAddress(e.target.value)}}></input>
             <button type="submit" >Submit</button>
-        </form>
+        </form>)}
         </div>
     )
 }
