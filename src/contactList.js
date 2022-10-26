@@ -19,10 +19,10 @@ function ContactLists() {
 
 
 function handleSort() {
-    const sortedContacts = contacts.sort((contact1,contact2)=> {
+    const sortedContacts = [...contacts].sort((contact1,contact2)=> {
       return contact1.name.localeCompare(contact2.name)
     })
-    console.log(sortedContacts)
+    setContacts(sortedContacts)
   }
   
 
