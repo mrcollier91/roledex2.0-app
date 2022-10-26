@@ -16,26 +16,28 @@ function ContactLists() {
     useEffect(()=> {
       getContacts()
   },[])
-    
+
+  // const [sortedContacts, setSortedContacts] = useState("")
+
+  
+
     return(
         <div>
-            {
+          <button onClick={(e)=>console.log('clicked')}>sort</button>
+                {
                 contacts.map((contact)=>{
-                    return(
-                        <div key={contact.id} className="contact">
-                        <NavLink to={`/contacts/${contact.id}`}>
-                        <div>
-                        <p>{contact.name}</p>
-                        <p>{contact.address}</p>
-                        <p>{contact.phone}</p>
-                        <p>{contact.email}</p>
-                        </div>
-                        </NavLink>
-                        </div>
-                    )
-                })
-           
-            }
+                        return(
+                            <div key={contact.id} className="contact">
+                            <NavLink to={`/contacts/${contact.id}`}>
+                            <div>
+                            <p>{contact.name}</p>
+                            <p>{contact.address}</p>
+                            <p>{contact.phone}</p>
+                            <p>{contact.email}</p>
+                            </div>
+                            </NavLink>
+                            </div>
+                        )})}
         </div>
     )
 }

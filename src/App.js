@@ -20,8 +20,6 @@ function App() {
         <Route path='/contacts' element={<ContactLists/> }/>
         <Route path='/newcontactform' element={ <NewContactForm />}/>
         <Route path='/contacts/:id' element={<IndividualContact/>}/>
-      
-     
       </Routes>
     </div>
     </BrowserRouter>
@@ -29,3 +27,16 @@ function App() {
 }
 
 export default App;
+
+
+<BrowserRouter>
+    <div className="App">
+      <NavBar/>
+      <Routes>
+        <Home/>
+        <ContactLists/>
+        <NewContactForm />
+        <IndividualContact/>
+      </Routes>
+    </div>
+    </BrowserRouter>
