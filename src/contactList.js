@@ -24,14 +24,15 @@ function handleSort() {
     })
     setContacts(sortedContacts)
   }
-  
-
     return(
         <div>
           <button onClick={(e)=>handleSort()}>sort</button>
                 {
                 contacts.map((contact)=>{
                         return(
+                            
+                            <>
+                            <button id="delete" onClick={(e)=>console.log("clicked")}> X </button>
                             <div key={contact.id} className="contact">
                             <NavLink to={`/contacts/${contact.id}`}>
                             <div>
@@ -42,6 +43,8 @@ function handleSort() {
                             </div>
                             </NavLink>
                             </div>
+                            </>
+                            
                         )})}
         </div>
     )
