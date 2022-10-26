@@ -30,7 +30,7 @@ function NewContactForm({getContacts}) {
     }
 
      return(
-         <div>
+         <div id="formbox">
              {isSubmit ? <Navigate to="/contacts" replace={true} /> : 
         (<form onSubmit={(e)=>handleNewContact(e)}>
             <label className="form">Name: </label>

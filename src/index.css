@@ -38,4 +38,11 @@ code {
   background-color: chartreuse;
 }
 
+#formbox{
+  background-color: plum;
+  padding: 25px;
+  border-radius: 45%;
+  margin-top: 50px;
+}
+
 
