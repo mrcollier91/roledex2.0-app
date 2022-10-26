@@ -40,5 +40,8 @@ this starts the db json server to store your contacts and act as a restfulAPI
 #### `usage`
 A brief video walk through from the app is availible at https://youtu.be/DTYspgrtszc
 
-##### `support`
+##### `Contributing`
+Pull requests are welcome. Please contact support to discuss changes you would like to make.
+
+###### `support`
 Email - colliermatt91@gmail.com with any issues
