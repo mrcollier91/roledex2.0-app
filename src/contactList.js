@@ -32,7 +32,6 @@ function handleSort() {
                         return(
                             
                             <>
-                            <button id="delete" onClick={(e)=>console.log("clicked")}> X </button>
                             <div key={contact.id} className="contact">
                             <NavLink to={`/contacts/${contact.id}`}>
                             <div>

@@ -18,6 +18,10 @@ code {
   margin:5px;
   justify-content: space-evenly;
   width: 100%;
+  background-color: aqua;
+  border-style: double;
+  border-radius: 25%;
+  border-width: 10px;
 }
 
 .contact{
