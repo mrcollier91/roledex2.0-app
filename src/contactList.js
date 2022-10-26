@@ -17,13 +17,18 @@ function ContactLists() {
       getContacts()
   },[])
 
-  // const [sortedContacts, setSortedContacts] = useState("")
 
+function handleSort() {
+    const sortedContacts = contacts.sort((contact1,contact2)=> {
+      return contact1.name.localeCompare(contact2.name)
+    })
+    console.log(sortedContacts)
+  }
   
 
     return(
         <div>
-          <button onClick={(e)=>console.log('clicked')}>sort</button>
+          <button onClick={(e)=>handleSort()}>sort</button>
                 {
                 contacts.map((contact)=>{
                         return(
