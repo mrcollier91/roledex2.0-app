@@ -2,8 +2,8 @@
 
 function Home() {
     return(
-        <div>
-            <h1>Welcome to Roledex app 2.0</h1>
+        <div id="instructions">
+            <h1 id="welcome">Welcome to Roledex app 2.0</h1>
             <p>instructions:</p>
             <br></br>
             <p>-use new contact form page to add new contacts name and email are required</p>
