@@ -25,6 +25,9 @@ code {
 }
 
 .contact{
+  border: 10px;
+  border-style:groove;
+  border-radius: 10%;
   text-decoration-line: none;
   background-color: gold;
   padding: 10px;
