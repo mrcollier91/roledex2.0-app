@@ -1,5 +1,9 @@
 # Roledex 2.0 (A contact app to replace all others)
-
+Roledex 2.0 is a contact app to help you store you contacts with 
+Name
+phone #
+E-mail adress
+Mailing address 
 
 
 ## Available Scripts
