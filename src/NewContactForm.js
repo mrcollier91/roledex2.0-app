@@ -33,16 +33,16 @@ function NewContactForm({getContacts}) {
          <div>
              {isSubmit ? <Navigate to="/contacts" replace={true} /> : 
         (<form onSubmit={(e)=>handleNewContact(e)}>
-            <label>Name: </label>
-            <input type={"text"} placeholder={"enter name"} onChange={(e)=>{setName(e.target.value)}} required></input>
+            <label className="form">Name: </label>
+            <input type={"text"} placeholder={"enter name *required"} onChange={(e)=>{setName(e.target.value)}} required></input>
             <br/>
-            <label>Email: </label>
-            <input type={"email"} placeholder={"enter email"} onChange={(e)=>{setEmail(e.target.value)}} required></input>
+            <label className="form">Email: </label>
+            <input type={"email"} placeholder={"enter email *required"} onChange={(e)=>{setEmail(e.target.value)}} required></input>
             <br/>
-            <label>Phone: </label>
+            <label className="form">Phone: </label>
             <input type={"tel"} placeholder={"enter phone"} onChange={(e)=>{setPhone(e.target.value)}}></input>
             <br/>
-            <label>Address: </label>
+            <label className="form">Address: </label>
             <input type={"text"} placeholder={"enter address"} onChange={(e)=>{setAddress(e.target.value)}}></input>
             <button type="submit" >Submit</button>
         </form>)}
