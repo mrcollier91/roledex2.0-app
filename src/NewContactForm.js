@@ -2,7 +2,7 @@ import {useState} from "react"
 import {Navigate} from "react-router-dom"
 
 
-function NewContactForm({getContacts}) {
+function NewContactForm() {
     // console.log('this is NewContactForm')
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
