@@ -34,7 +34,6 @@ code {
   width: 50%;
   margin: 10px;
   border-radius: 10%;
-  
 }
 
 .form{
@@ -57,6 +56,19 @@ code {
   text-shadow: 100%;
   text-decoration-color: blueviolet;
   text-decoration: underline;
+}
+
+.indCard{
+  border: 10px;
+  border-style:groove;
+  border-radius: 10%;
+  text-decoration-line: none;
+  background-color: gold;
+  padding: 10px;
+  width: 50%;
+  margin: 10px;
+  border-radius: 10%;
+  font-weight: 800;
 }
 
 

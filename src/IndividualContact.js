@@ -18,7 +18,7 @@ function IndividualContact() {
     },[])
 
     return(
-        <div>
+        <div className="indCard">
             {contact ? 
                 
                 (
